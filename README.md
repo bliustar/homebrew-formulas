@@ -1,21 +1,21 @@
-## Flutter
+# Flutter
 
-Currently installs flutter latest version in flutter/flutter github (https://github.com/flutter/flutter)
+Currently installs flutter latest tagged version in flutter/flutter github (https://github.com/flutter/flutter)
 
-# Installation:
+## Installation:
 
-```shell
+```powershell
 $ brew tap eclewlow/formulas
 $ brew install flutter
 ```
 
 or
 
-```shell
+```powershell
 $ brew install eclewlow/formulas/flutter
 ```
 
-# Post-Installation:
+## Post-Installation:
 
 flutter-sdk path will be /usr/local/opt/flutter
 dart-sdk path will be /usr/local/opt/flutter/bin/cache/dart-sdk
