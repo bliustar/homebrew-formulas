@@ -1,14 +1,12 @@
 class Flutter < Formula
   desc "Build beautiful native apps in record time"
   homepage "https://flutter.io/"
-  version "1.1.1"
-  url "https://github.com/flutter/flutter.git"
-  sha256 "6e3ba2da94fb150d2cb8e0596eeb92c86e5e437e91a5f39f211bd4b21d0b24f8"
-
+  version "1.0.0"
+  url "https://github.com/flutter/flutter.git", :branch => "stable"
   bottle :unneeded
 
   def install
-    system "git", "fetch", "--tags"
+    system "git", "fetch", "--all", "--prune", "--tags"
 
     # checkout latest tag
     latest_tag = `git tag | tail -1`
